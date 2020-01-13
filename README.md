@@ -6,6 +6,11 @@
 [Installed git](https://git-scm.com/downloads)
 
 ## Instalation
+Install progractor globally
+```
+npm i protractor -g
+```
+
 Use npm to install project
 ```
 npm install
@@ -20,3 +25,15 @@ In second terminal in project destination run
 ```
 protractor
 ```
+
+## Possible problems
+When running protractor, you may be asked about updating webdriver-manager then run
+```
+webdriver-manager update
+```
+and then
+
+```
+protractor
+```
+to run tests.
