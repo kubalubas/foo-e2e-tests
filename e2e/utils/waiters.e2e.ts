@@ -20,7 +20,7 @@ export function waitForClickable(myElement: ElementFinder, customTimeout: number
 
 export function waitForUrlContains(url: string, customTimeout: number = E2E_TIMEOUT): object {
   return browser.getCurrentUrl().then(myUrl => {
-    return browser.wait(protractor.ExpectedConditions.urlContains(url), customTimeout, `URL do not contain: ${url}, and is: ${myUrl}`);
+    return browser.wait(protractor.ExpectedConditions.urlContains(url), customTimeout, `URL does not contain: ${url}, and is: ${myUrl}`);
   });
 }
 
